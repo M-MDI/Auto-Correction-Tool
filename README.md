@@ -1,0 +1,59 @@
+Text Completion and Auto-Correction Tool
+Welcome to the Text Completion and Auto-Correction Tool! This project is designed to assist users in modifying and correcting text files efficiently. Whether it's completing words, converting numbers, or fixing punctuation, this tool has got you covered.
+
+Objectives
+In this project, we leverage functions from a previous repository to create a simple yet powerful text editing tool. Here are the primary objectives:
+
+Utilize existing functions written in Go
+Develop a text completion, editing, and auto-correction system
+Implement features such as converting hex and binary numbers, adjusting letter case, and fixing punctuation
+Ensure the codebase adheres to good practices and is easily testable
+Introduction
+This project is built using Go, a powerful and efficient programming language. We emphasize clean coding practices and encourage the inclusion of test files for unit testing.
+
+The tool provides various functionalities, including:
+
+Conversion of hexadecimal and binary numbers
+Adjustment of letter case (uppercase, lowercase, capitalized)
+Fixing punctuation placement and formatting
+Usage
+To use the tool, follow these steps:
+
+Clone the repository to your local machine.
+Navigate to the project directory.
+Execute the tool with appropriate arguments:
+sh
+Copy code
+go run . input_file.txt output_file.txt
+View the modified text in the output file.
+Examples
+Here are some examples demonstrating the tool's capabilities:
+
+Converting hex and binary numbers:
+sh
+Copy code
+$ cat input.txt
+Simply add 42 (hex) and 10 (bin) and you will see the result is 68.
+$ go run . input.txt output.txt
+$ cat output.txt
+Simply add 66 and 2 and you will see the result is 68.
+Adjusting letter case:
+sh
+Copy code
+$ cat input.txt
+It was the best of times, it was the worst of times (up) , it was the age of wisdom...
+$ go run . input.txt output.txt
+$ cat output.txt
+It was the best of times, it was the worst of TIMES, it was the age of wisdom...
+Fixing punctuation:
+sh
+Copy code
+$ cat input.txt
+Punctuation tests are ... kinda boring ,don't you think !?
+$ go run . input.txt output.txt
+$ cat output.txt
+Punctuation tests are... kinda boring, don't you think!?
+Conclusion
+With this tool, you can efficiently edit and correct text files according to your needs. Feel free to explore the codebase, contribute improvements, or report any issues you encounter.
+
+Happy editing!
