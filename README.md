@@ -29,14 +29,19 @@ View the modified text in the output file.
 Examples
 Here are some examples demonstrating the tool's capabilities:
 
+
+
+
 Converting hex and binary numbers:
 sh
 Copy code
+
 $ cat input.txt
 Simply add 42 (hex) and 10 (bin) and you will see the result is 68.
 $ go run . input.txt output.txt
 $ cat output.txt
 Simply add 66 and 2 and you will see the result is 68.
+
 Adjusting letter case:
 sh
 Copy code
